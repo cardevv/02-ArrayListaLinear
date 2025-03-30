@@ -16,8 +16,9 @@ void buscarElemento();
 const int MAX = 5;
 int lista[MAX]{};
 int nElementos = 0;
-bool encontrado = false;
 int nBusca = 0;
+bool encontrado = false;
+
 
 
 int main()
@@ -108,20 +109,30 @@ void inserirElemento()
 void buscarElemento()
 {
 
-	cout << "digite o numero a buscar: ";
-
-		cin >> nBusca;
+	cout << "Diigite um elemento" << endl;
+	cin >> nBusca;
 
 	for (int n = 0; n < nElementos; n++) {
-        if (lista[n] == nBusca) {
-            cout << "elemento encontrado na posicao " << n << ".\n";
-            encontrado = true;
-        }
-    }
 
-    if (!encontrado) {
-        cout << "nenhum elemento encontrado.\n";
-    }
+		if (lista[n] == nBusca) {
+			cout << "Elemento encontrado na posicao" << n << endl;
+			encontrado = true;
+		}
+
+		
+
+		
+
+
+	}
+
+	if (!encontrado) {
+		cout << "Elemento não encontrado" << endl;
+
+	}
+
+	
+	
 
 
 }
